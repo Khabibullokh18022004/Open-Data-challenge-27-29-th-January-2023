@@ -1,0 +1,671 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		103CB5862984398A00A1585C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103CB5852984398A00A1585C /* AppDelegate.swift */; };
+		103CB5882984398A00A1585C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103CB5872984398A00A1585C /* SceneDelegate.swift */; };
+		103CB58D2984398A00A1585C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 103CB58B2984398A00A1585C /* Main.storyboard */; };
+		103CB58F2984398B00A1585C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 103CB58E2984398B00A1585C /* Assets.xcassets */; };
+		103CB5922984398B00A1585C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 103CB5902984398B00A1585C /* LaunchScreen.storyboard */; };
+		103CB59A298439D900A1585C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103CB599298439D900A1585C /* MainViewController.swift */; };
+		103CB59C29843A1800A1585C /* QRScanerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103CB59B29843A1800A1585C /* QRScanerViewController.swift */; };
+		103CB59E29843A5400A1585C /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103CB59D29843A5400A1585C /* BaseViewController.swift */; };
+		103CB5A229843AE100A1585C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103CB5A129843AE100A1585C /* Extensions.swift */; };
+		103CB5A429843D1000A1585C /* QRScannerCenterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103CB5A329843D1000A1585C /* QRScannerCenterView.swift */; };
+		103CB5A629843D5A00A1585C /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103CB5A529843D5A00A1585C /* Utils.swift */; };
+		103CB5AE29846E3600A1585C /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103CB5AD29846E3600A1585C /* NetworkManager.swift */; };
+		103CB5B1298470EA00A1585C /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103CB5B0298470EA00A1585C /* Model.swift */; };
+		103CB5B42984EDA500A1585C /* e-codes.json in Resources */ = {isa = PBXBuildFile; fileRef = 103CB5B32984EDA500A1585C /* e-codes.json */; };
+		103CB5B62984F30000A1585C /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103CB5B52984F30000A1585C /* InitialViewController.swift */; };
+		103CB5B82984F31600A1585C /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103CB5B72984F31600A1585C /* Colors.swift */; };
+		103CB5BB2984F43F00A1585C /* MainImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103CB5BA2984F43F00A1585C /* MainImageView.swift */; };
+		103CB5BD2984F46C00A1585C /* MainLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103CB5BC2984F46C00A1585C /* MainLabel.swift */; };
+		103CB5BF2984F49B00A1585C /* MainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103CB5BE2984F49B00A1585C /* MainButton.swift */; };
+		103CB5CA2984F8FE00A1585C /* Outfit-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 103CB5C12984F8FE00A1585C /* Outfit-Light.ttf */; };
+		103CB5CB2984F8FE00A1585C /* Outfit-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 103CB5C22984F8FE00A1585C /* Outfit-Black.ttf */; };
+		103CB5CC2984F8FE00A1585C /* Outfit-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 103CB5C32984F8FE00A1585C /* Outfit-ExtraBold.ttf */; };
+		103CB5CD2984F8FE00A1585C /* Outfit-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 103CB5C42984F8FE00A1585C /* Outfit-Bold.ttf */; };
+		103CB5CE2984F8FE00A1585C /* Outfit-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 103CB5C52984F8FE00A1585C /* Outfit-Regular.ttf */; };
+		103CB5CF2984F8FE00A1585C /* Outfit-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 103CB5C62984F8FE00A1585C /* Outfit-Medium.ttf */; };
+		103CB5D02984F8FE00A1585C /* Outfit-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 103CB5C72984F8FE00A1585C /* Outfit-SemiBold.ttf */; };
+		103CB5D12984F8FE00A1585C /* Outfit-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 103CB5C82984F8FE00A1585C /* Outfit-Thin.ttf */; };
+		103CB5D22984F8FE00A1585C /* Outfit-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 103CB5C92984F8FE00A1585C /* Outfit-ExtraLight.ttf */; };
+		103CB5D42985170A00A1585C /* OnboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103CB5D32985170A00A1585C /* OnboardViewController.swift */; };
+		103CB5D72985184F00A1585C /* WelcomeScreenCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103CB5D62985184F00A1585C /* WelcomeScreenCell.swift */; };
+		103CB5D9298526C300A1585C /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103CB5D8298526C300A1585C /* CustomTabBarController.swift */; };
+		103CB5DD29854E1D00A1585C /* ProfileControllerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103CB5DC29854E1D00A1585C /* ProfileControllerCell.swift */; };
+		103CB5DF2985542E00A1585C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103CB5DE2985542E00A1585C /* HomeViewController.swift */; };
+		103CB5E12985843000A1585C /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103CB5E02985843000A1585C /* ResultViewController.swift */; };
+		103CB5E4298584FD00A1585C /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103CB5E3298584FD00A1585C /* ResultView.swift */; };
+		103CB5E62985995E00A1585C /* ResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103CB5E52985995E00A1585C /* ResultTableViewCell.swift */; };
+		103CB5E82985CD0B00A1585C /* SeearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103CB5E72985CD0B00A1585C /* SeearchViewController.swift */; };
+		103CB5EA2985D6E000A1585C /* Ext+UserDeafaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103CB5E92985D6E000A1585C /* Ext+UserDeafaults.swift */; };
+		103CB5EC2985DC8C00A1585C /* Ext+UINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103CB5EB2985DC8C00A1585C /* Ext+UINavigationController.swift */; };
+		103CB5EE2985EE1600A1585C /* SavedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103CB5ED2985EE1500A1585C /* SavedViewController.swift */; };
+		103CB5F02985EF2800A1585C /* SavedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103CB5EF2985EF2800A1585C /* SavedTableViewCell.swift */; };
+		103CB5F32986512A00A1585C /* CustomScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103CB5F22986512A00A1585C /* CustomScrollView.swift */; };
+		103CB5F5298658DC00A1585C /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103CB5F4298658DB00A1585C /* SettingsViewController.swift */; };
+		26C3ECF4CC60ED74BF8DEDD8 /* Pods_Halol_Harom.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95B80311C54ADE922C0A7BB4 /* Pods_Halol_Harom.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		103CB5822984398A00A1585C /* Halol&Harom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Halol&Harom.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		103CB5852984398A00A1585C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		103CB5872984398A00A1585C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		103CB58C2984398A00A1585C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		103CB58E2984398B00A1585C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		103CB5912984398B00A1585C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		103CB5932984398B00A1585C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		103CB599298439D900A1585C /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		103CB59B29843A1800A1585C /* QRScanerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScanerViewController.swift; sourceTree = "<group>"; };
+		103CB59D29843A5400A1585C /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		103CB5A129843AE100A1585C /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		103CB5A329843D1000A1585C /* QRScannerCenterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScannerCenterView.swift; sourceTree = "<group>"; };
+		103CB5A529843D5A00A1585C /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		103CB5AD29846E3600A1585C /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		103CB5B0298470EA00A1585C /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		103CB5B32984EDA500A1585C /* e-codes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "e-codes.json"; sourceTree = "<group>"; };
+		103CB5B52984F30000A1585C /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
+		103CB5B72984F31600A1585C /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		103CB5BA2984F43F00A1585C /* MainImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainImageView.swift; sourceTree = "<group>"; };
+		103CB5BC2984F46C00A1585C /* MainLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainLabel.swift; sourceTree = "<group>"; };
+		103CB5BE2984F49B00A1585C /* MainButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainButton.swift; sourceTree = "<group>"; };
+		103CB5C12984F8FE00A1585C /* Outfit-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Outfit-Light.ttf"; sourceTree = "<group>"; };
+		103CB5C22984F8FE00A1585C /* Outfit-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Outfit-Black.ttf"; sourceTree = "<group>"; };
+		103CB5C32984F8FE00A1585C /* Outfit-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Outfit-ExtraBold.ttf"; sourceTree = "<group>"; };
+		103CB5C42984F8FE00A1585C /* Outfit-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Outfit-Bold.ttf"; sourceTree = "<group>"; };
+		103CB5C52984F8FE00A1585C /* Outfit-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Outfit-Regular.ttf"; sourceTree = "<group>"; };
+		103CB5C62984F8FE00A1585C /* Outfit-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Outfit-Medium.ttf"; sourceTree = "<group>"; };
+		103CB5C72984F8FE00A1585C /* Outfit-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Outfit-SemiBold.ttf"; sourceTree = "<group>"; };
+		103CB5C82984F8FE00A1585C /* Outfit-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Outfit-Thin.ttf"; sourceTree = "<group>"; };
+		103CB5C92984F8FE00A1585C /* Outfit-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Outfit-ExtraLight.ttf"; sourceTree = "<group>"; };
+		103CB5D32985170A00A1585C /* OnboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardViewController.swift; sourceTree = "<group>"; };
+		103CB5D62985184F00A1585C /* WelcomeScreenCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreenCell.swift; sourceTree = "<group>"; };
+		103CB5D8298526C300A1585C /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
+		103CB5DC29854E1D00A1585C /* ProfileControllerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileControllerCell.swift; sourceTree = "<group>"; };
+		103CB5DE2985542E00A1585C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		103CB5E02985843000A1585C /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		103CB5E3298584FD00A1585C /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
+		103CB5E52985995E00A1585C /* ResultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultTableViewCell.swift; sourceTree = "<group>"; };
+		103CB5E72985CD0B00A1585C /* SeearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeearchViewController.swift; sourceTree = "<group>"; };
+		103CB5E92985D6E000A1585C /* Ext+UserDeafaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+UserDeafaults.swift"; sourceTree = "<group>"; };
+		103CB5EB2985DC8C00A1585C /* Ext+UINavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+UINavigationController.swift"; sourceTree = "<group>"; };
+		103CB5ED2985EE1500A1585C /* SavedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedViewController.swift; sourceTree = "<group>"; };
+		103CB5EF2985EF2800A1585C /* SavedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedTableViewCell.swift; sourceTree = "<group>"; };
+		103CB5F22986512A00A1585C /* CustomScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomScrollView.swift; sourceTree = "<group>"; };
+		103CB5F4298658DB00A1585C /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		5BF9C53F691406D4D016DDAD /* Pods-Halol&Harom.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Halol&Harom.release.xcconfig"; path = "Target Support Files/Pods-Halol&Harom/Pods-Halol&Harom.release.xcconfig"; sourceTree = "<group>"; };
+		6691D980F3E86641EFFA91FC /* Pods-Halol&Harom.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Halol&Harom.debug.xcconfig"; path = "Target Support Files/Pods-Halol&Harom/Pods-Halol&Harom.debug.xcconfig"; sourceTree = "<group>"; };
+		95B80311C54ADE922C0A7BB4 /* Pods_Halol_Harom.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Halol_Harom.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		103CB57F2984398A00A1585C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26C3ECF4CC60ED74BF8DEDD8 /* Pods_Halol_Harom.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		103CB5792984398A00A1585C = {
+			isa = PBXGroup;
+			children = (
+				103CB5842984398A00A1585C /* Halol&Harom */,
+				103CB5832984398A00A1585C /* Products */,
+				C2F0D1117D1DBA8D0E262329 /* Pods */,
+				B0CAD71A00157977868A4528 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		103CB5832984398A00A1585C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				103CB5822984398A00A1585C /* Halol&Harom.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		103CB5842984398A00A1585C /* Halol&Harom */ = {
+			isa = PBXGroup;
+			children = (
+				103CB5C02984F8EF00A1585C /* Fonts */,
+				103CB5B22984ED9A00A1585C /* Resources */,
+				103CB5A82984456800A1585C /* Extensions */,
+				103CB5AC29846E2A00A1585C /* NetworkManager */,
+				103CB5AF298470D600A1585C /* Model */,
+				103CB5A72984454F00A1585C /* Views */,
+				103CB5A9298445B000A1585C /* Screens */,
+				103CB5852984398A00A1585C /* AppDelegate.swift */,
+				103CB5872984398A00A1585C /* SceneDelegate.swift */,
+				103CB58B2984398A00A1585C /* Main.storyboard */,
+				103CB58E2984398B00A1585C /* Assets.xcassets */,
+				103CB5902984398B00A1585C /* LaunchScreen.storyboard */,
+				103CB5932984398B00A1585C /* Info.plist */,
+				103CB59D29843A5400A1585C /* BaseViewController.swift */,
+			);
+			path = "Halol&Harom";
+			sourceTree = "<group>";
+		};
+		103CB5A72984454F00A1585C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				103CB5E2298584E800A1585C /* CustomViews */,
+				103CB5D52985184900A1585C /* Cells */,
+				103CB5B92984F40800A1585C /* Subviews */,
+				103CB5A329843D1000A1585C /* QRScannerCenterView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		103CB5A82984456800A1585C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				103CB5A129843AE100A1585C /* Extensions.swift */,
+				103CB5A529843D5A00A1585C /* Utils.swift */,
+				103CB5E92985D6E000A1585C /* Ext+UserDeafaults.swift */,
+				103CB5EB2985DC8C00A1585C /* Ext+UINavigationController.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		103CB5A9298445B000A1585C /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				103CB5E72985CD0B00A1585C /* SeearchViewController.swift */,
+				103CB599298439D900A1585C /* MainViewController.swift */,
+				103CB59B29843A1800A1585C /* QRScanerViewController.swift */,
+				103CB5B52984F30000A1585C /* InitialViewController.swift */,
+				103CB5D32985170A00A1585C /* OnboardViewController.swift */,
+				103CB5D8298526C300A1585C /* CustomTabBarController.swift */,
+				103CB5DE2985542E00A1585C /* HomeViewController.swift */,
+				103CB5ED2985EE1500A1585C /* SavedViewController.swift */,
+				103CB5F12986510A00A1585C /* Main */,
+				103CB5F4298658DB00A1585C /* SettingsViewController.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		103CB5AC29846E2A00A1585C /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				103CB5AD29846E3600A1585C /* NetworkManager.swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		103CB5AF298470D600A1585C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				103CB5B0298470EA00A1585C /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		103CB5B22984ED9A00A1585C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				103CB5B32984EDA500A1585C /* e-codes.json */,
+				103CB5B72984F31600A1585C /* Colors.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		103CB5B92984F40800A1585C /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				103CB5BA2984F43F00A1585C /* MainImageView.swift */,
+				103CB5BC2984F46C00A1585C /* MainLabel.swift */,
+				103CB5BE2984F49B00A1585C /* MainButton.swift */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
+		103CB5C02984F8EF00A1585C /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				103CB5C22984F8FE00A1585C /* Outfit-Black.ttf */,
+				103CB5C42984F8FE00A1585C /* Outfit-Bold.ttf */,
+				103CB5C32984F8FE00A1585C /* Outfit-ExtraBold.ttf */,
+				103CB5C92984F8FE00A1585C /* Outfit-ExtraLight.ttf */,
+				103CB5C12984F8FE00A1585C /* Outfit-Light.ttf */,
+				103CB5C62984F8FE00A1585C /* Outfit-Medium.ttf */,
+				103CB5C52984F8FE00A1585C /* Outfit-Regular.ttf */,
+				103CB5C72984F8FE00A1585C /* Outfit-SemiBold.ttf */,
+				103CB5C82984F8FE00A1585C /* Outfit-Thin.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		103CB5D52985184900A1585C /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				103CB5D62985184F00A1585C /* WelcomeScreenCell.swift */,
+				103CB5DC29854E1D00A1585C /* ProfileControllerCell.swift */,
+				103CB5E52985995E00A1585C /* ResultTableViewCell.swift */,
+				103CB5EF2985EF2800A1585C /* SavedTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		103CB5E2298584E800A1585C /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				103CB5E3298584FD00A1585C /* ResultView.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		103CB5F12986510A00A1585C /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				103CB5E02985843000A1585C /* ResultViewController.swift */,
+				103CB5F22986512A00A1585C /* CustomScrollView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		B0CAD71A00157977868A4528 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				95B80311C54ADE922C0A7BB4 /* Pods_Halol_Harom.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C2F0D1117D1DBA8D0E262329 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6691D980F3E86641EFFA91FC /* Pods-Halol&Harom.debug.xcconfig */,
+				5BF9C53F691406D4D016DDAD /* Pods-Halol&Harom.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		103CB5812984398A00A1585C /* Halol&Harom */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 103CB5962984398B00A1585C /* Build configuration list for PBXNativeTarget "Halol&Harom" */;
+			buildPhases = (
+				E6CD7BB0E1B18BC41C7544EA /* [CP] Check Pods Manifest.lock */,
+				103CB57E2984398A00A1585C /* Sources */,
+				103CB57F2984398A00A1585C /* Frameworks */,
+				103CB5802984398A00A1585C /* Resources */,
+				3801E16DA900D25A62319F0B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Halol&Harom";
+			productName = "Halol&Harom";
+			productReference = 103CB5822984398A00A1585C /* Halol&Harom.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		103CB57A2984398A00A1585C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					103CB5812984398A00A1585C = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 103CB57D2984398A00A1585C /* Build configuration list for PBXProject "Halol&Harom" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 103CB5792984398A00A1585C;
+			productRefGroup = 103CB5832984398A00A1585C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				103CB5812984398A00A1585C /* Halol&Harom */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		103CB5802984398A00A1585C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				103CB5CC2984F8FE00A1585C /* Outfit-ExtraBold.ttf in Resources */,
+				103CB5B42984EDA500A1585C /* e-codes.json in Resources */,
+				103CB5D22984F8FE00A1585C /* Outfit-ExtraLight.ttf in Resources */,
+				103CB5CE2984F8FE00A1585C /* Outfit-Regular.ttf in Resources */,
+				103CB5922984398B00A1585C /* LaunchScreen.storyboard in Resources */,
+				103CB58F2984398B00A1585C /* Assets.xcassets in Resources */,
+				103CB5CD2984F8FE00A1585C /* Outfit-Bold.ttf in Resources */,
+				103CB5D12984F8FE00A1585C /* Outfit-Thin.ttf in Resources */,
+				103CB58D2984398A00A1585C /* Main.storyboard in Resources */,
+				103CB5CA2984F8FE00A1585C /* Outfit-Light.ttf in Resources */,
+				103CB5CF2984F8FE00A1585C /* Outfit-Medium.ttf in Resources */,
+				103CB5D02984F8FE00A1585C /* Outfit-SemiBold.ttf in Resources */,
+				103CB5CB2984F8FE00A1585C /* Outfit-Black.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3801E16DA900D25A62319F0B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Halol&Harom/Pods-Halol&Harom-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Halol&Harom/Pods-Halol&Harom-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Halol&Harom/Pods-Halol&Harom-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E6CD7BB0E1B18BC41C7544EA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Halol&Harom-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		103CB57E2984398A00A1585C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				103CB5EC2985DC8C00A1585C /* Ext+UINavigationController.swift in Sources */,
+				103CB5E82985CD0B00A1585C /* SeearchViewController.swift in Sources */,
+				103CB5AE29846E3600A1585C /* NetworkManager.swift in Sources */,
+				103CB5E62985995E00A1585C /* ResultTableViewCell.swift in Sources */,
+				103CB5B82984F31600A1585C /* Colors.swift in Sources */,
+				103CB5E12985843000A1585C /* ResultViewController.swift in Sources */,
+				103CB59E29843A5400A1585C /* BaseViewController.swift in Sources */,
+				103CB5B62984F30000A1585C /* InitialViewController.swift in Sources */,
+				103CB59A298439D900A1585C /* MainViewController.swift in Sources */,
+				103CB5DD29854E1D00A1585C /* ProfileControllerCell.swift in Sources */,
+				103CB5A429843D1000A1585C /* QRScannerCenterView.swift in Sources */,
+				103CB5862984398A00A1585C /* AppDelegate.swift in Sources */,
+				103CB5EE2985EE1600A1585C /* SavedViewController.swift in Sources */,
+				103CB5F32986512A00A1585C /* CustomScrollView.swift in Sources */,
+				103CB5D9298526C300A1585C /* CustomTabBarController.swift in Sources */,
+				103CB5B1298470EA00A1585C /* Model.swift in Sources */,
+				103CB5882984398A00A1585C /* SceneDelegate.swift in Sources */,
+				103CB5EA2985D6E000A1585C /* Ext+UserDeafaults.swift in Sources */,
+				103CB5BD2984F46C00A1585C /* MainLabel.swift in Sources */,
+				103CB5E4298584FD00A1585C /* ResultView.swift in Sources */,
+				103CB5D42985170A00A1585C /* OnboardViewController.swift in Sources */,
+				103CB5D72985184F00A1585C /* WelcomeScreenCell.swift in Sources */,
+				103CB5F02985EF2800A1585C /* SavedTableViewCell.swift in Sources */,
+				103CB5F5298658DC00A1585C /* SettingsViewController.swift in Sources */,
+				103CB5BF2984F49B00A1585C /* MainButton.swift in Sources */,
+				103CB5DF2985542E00A1585C /* HomeViewController.swift in Sources */,
+				103CB59C29843A1800A1585C /* QRScanerViewController.swift in Sources */,
+				103CB5BB2984F43F00A1585C /* MainImageView.swift in Sources */,
+				103CB5A229843AE100A1585C /* Extensions.swift in Sources */,
+				103CB5A629843D5A00A1585C /* Utils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		103CB58B2984398A00A1585C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				103CB58C2984398A00A1585C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		103CB5902984398B00A1585C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				103CB5912984398B00A1585C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		103CB5942984398B00A1585C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		103CB5952984398B00A1585C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		103CB5972984398B00A1585C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6691D980F3E86641EFFA91FC /* Pods-Halol&Harom.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FZU84SDGV7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Halol&Harom/Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need camera permission to scan QR code";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mekhriddin.Halol-Harom";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		103CB5982984398B00A1585C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BF9C53F691406D4D016DDAD /* Pods-Halol&Harom.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FZU84SDGV7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Halol&Harom/Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need camera permission to scan QR code";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mekhriddin.Halol-Harom";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		103CB57D2984398A00A1585C /* Build configuration list for PBXProject "Halol&Harom" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				103CB5942984398B00A1585C /* Debug */,
+				103CB5952984398B00A1585C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		103CB5962984398B00A1585C /* Build configuration list for PBXNativeTarget "Halol&Harom" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				103CB5972984398B00A1585C /* Debug */,
+				103CB5982984398B00A1585C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 103CB57A2984398A00A1585C /* Project object */;
+}
